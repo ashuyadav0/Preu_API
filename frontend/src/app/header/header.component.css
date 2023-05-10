@@ -1,0 +1,24 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.section {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/photo-1504270997636-07ddfbd48945.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}

@@ -1,0 +1,53 @@
+<div class="container d-flex p-5">
+  <div *ngIf="myProtein != undefined; else noProduct">
+
+    <div class="card m-2">
+      <img class="card-img-top"
+           src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/10530943-1504726884876366.jpg "
+           alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ID: {{ myProtein.productId }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Codi: {{ myProtein.codi }}</h6>
+        <p class="card-text">Price: {{ myProtein.price }}</p>
+        <a href="{{ myProtein .url }}" class=" btn btn-primary">Link</a>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="prozis != undefined; else noProduct">
+
+    <div class="card m-2">
+      <img class="card-img-top"
+           src="https://static.sscontent.com/thumb/500/500/products/124/v1162086_prozis_oatmeal--whey-1000-g_bonbon_newin_flavor.jpg"
+           alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ID: {{ prozis.productId }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Codi: {{ prozis.codi }}</h6>
+        <p class="card-text">Price: {{ prozis.price }}</p>
+        <a href="{{ prozis .url }}" class=" btn btn-primary">Link</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="amazon != undefined; else noProduct">
+    <div class="card m-2">
+      <img class="card-img-top"
+           src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/10530943-1504726884876366.jpg "
+           alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ID: {{ amazon.productId }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Codi: {{ amazon.codi }}</h6>
+        <p class="card-text">Price: {{ amazon.price }}</p>
+        <a href="{{ amazon .url }}" class=" btn btn-primary">Link</a>
+      </div>
+    </div>
+  </div>
+
+
+  <ng-template #noProduct>
+    <div>No hay productos</div>
+  </ng-template>
+
+
+</div>
